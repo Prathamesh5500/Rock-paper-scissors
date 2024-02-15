@@ -1,0 +1,57 @@
+
+body{
+    background-color: rgb(230, 220, 207);
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+img{
+    height: 150px;
+}
+div{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+p{
+    display: flex;
+    justify-content: center;
+}
+span{
+    margin: 10px;
+}
+.choices {
+    display: flex;
+    justify-content: center;
+}
+
+.choice {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+}
+
+#winner {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#winner::after {
+    content: attr(data-content);
+}
+
+.choice img {
+    border-radius: 50%;
+    border: 2px solid #333;
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.choice img:hover {
+    border-color: #666;
+}
